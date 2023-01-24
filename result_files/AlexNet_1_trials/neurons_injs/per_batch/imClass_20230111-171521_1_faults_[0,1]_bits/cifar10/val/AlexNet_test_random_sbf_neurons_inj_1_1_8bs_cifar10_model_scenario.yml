@@ -1,0 +1,111 @@
+dataset: cifar10/val
+dataset_size: 100
+date_time: 11/01/2023 17:15:21
+dl_sampleN: 100
+dl_shuffle: false
+ds_batch_size: 1
+ds_loader_class: cifar10
+ds_location: ./data/cifar-10-batches-py
+ds_test_size: 10
+fi_logfile: '-1'
+inj_policy: per_batch
+inj_policy_opts:
+- per_image
+- per_epoch
+- per_batch
+layer_types: !!python/tuple
+- conv2d
+layer_types_opts:
+- conv2d
+- fcc
+- conv3d
+max_fault_rate: -1.0
+max_faults_per_image: 1
+model_name: AlexNet
+modelname: alexnet
+num_runs: 1
+print: false
+ptf_C: 1
+ptf_D: -1
+ptf_H: 100
+ptf_W: 100
+ptf_batch_size: 8
+ranger_detector: false
+read_from_file: '-1'
+reason: []
+resil_name: null
+rnd_batch: change
+rnd_batch_opts:
+- each
+- same
+- change
+rnd_bit_range:
+- 0
+- 1
+rnd_feature_opts:
+- same
+- change
+rnd_layer: change
+rnd_layer_weighted: true
+rnd_location: change
+rnd_mode: neurons
+rnd_mode_opts:
+- neurons
+- weights
+rnd_value: change
+rnd_value_bits: 32
+rnd_value_max: -1.0
+rnd_value_min: -1.0
+rnd_value_type: bitflip
+rnd_value_type_opts:
+- number
+- bitflip
+- bitflip_bounds
+- bitflip_weighted
+- stuckat_0
+- stuckat_1
+run_type: single
+run_type_opts:
+- single
+- accumulate
+save_fault_file_dir: result_files/
+sensor_channels: null
+sourcedev: cuda
+st_C:
+- 0
+- 1
+- 0
+st_H:
+- 3
+- 3
+- 4
+st_K:
+- 1
+- 1
+- 1
+st_W:
+- 0
+- 2
+- 4
+st_batches:
+- -1
+- -1
+- -1
+st_data_location: inline
+st_layers:
+- 1
+- 1
+- 2
+st_mode: weights
+st_value:
+- 1200
+- 30
+- 2000
+st_value_type: number
+state: state/lenet_teststate2.pth
+uuid: 20230111-171521
+valid: true
+value_type: random
+value_type_opts:
+- static
+- random
